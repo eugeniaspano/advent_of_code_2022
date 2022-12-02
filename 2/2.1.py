@@ -2,19 +2,19 @@ if __name__ == "__main__":
     file = open("input.txt")
     lines = file.readlines()
 
-    points = {
+    shape_points = {
         'X': 1,
         'Y': 2,
         'Z': 3
     }
 
-    draws = {
+    draw = {
         'A': 'X',
         'B': 'Y',
         'C': 'Z'
     }
 
-    wins = {
+    win = {
         'A': 'Y',
         'B': 'Z',
         'C': 'X'
@@ -33,13 +33,13 @@ if __name__ == "__main__":
         opponent = game[0]
         outcome = game[1]
         if outcome == 'X':
-            p = points[loss[opponent]]
+            p = shape_points[loss[opponent]]
             tot_score += p
         elif outcome == 'Y':
-            p = points[draws[opponent]]
+            p = shape_points[draw[opponent]]
             tot_score += (3 + p)
         else:
-            p = points[wins[opponent]]
+            p = shape_points[win[opponent]]
             tot_score += (6 + p)
 
     print(tot_score)

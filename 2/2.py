@@ -2,7 +2,7 @@ if __name__ == "__main__":
     file = open("input.txt")
     lines = file.readlines()
 
-    points = {
+    shape_points = {
         'X': 1,
         'Y': 2,
         'Z': 3
@@ -15,7 +15,7 @@ if __name__ == "__main__":
 
     for l in lines:
         game = tuple(l.strip().split(' '))
-        p = points[game[1]]
+        p = shape_points[game[1]]
         if game in wins:
             tot_score += (6 + p)
         elif game in draws:
