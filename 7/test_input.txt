@@ -1,0 +1,43 @@
+$ cd /
+$ ls
+dir a
+14848514 b.txt
+8504156 c.dat
+dir d1
+dir last
+$ cd a
+$ ls
+dir e
+29116 f
+2557 g
+62596 h.lst
+dir f
+$ cd e
+$ ls
+584 i
+$ cd ..
+$ cd f
+$ ls
+0 file_f
+$ cd ..
+$ cd ..
+$ cd d1
+$ ls
+4060174 j
+8033020 d.log
+5626152 d.ext
+7214296 k
+dir d
+$ cd d
+$ ls
+0 filedd
+dir n
+$ cd n
+$ ls
+0 filenn
+$ cd ..
+$ cd ..
+$ cd ..
+$ cd last
+$ ls
+0 lastfile
